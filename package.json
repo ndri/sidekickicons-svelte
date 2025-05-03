@@ -1,0 +1,52 @@
+{
+  "name": "@sidekickicons/svelte",
+  "license": "MIT",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "pnpm download-icons && pnpm build-icons && vite build && pnpm prepack",
+    "download-icons": "node scripts/download-icons.js",
+    "build-icons": "node scripts/build-icons.js",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "prepack": "svelte-kit sync && svelte-package && publint",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@octokit/rest": "^21.1.1",
+    "@sveltejs/adapter-auto": "^6.0.0",
+    "@sveltejs/kit": "^2.20.8",
+    "@sveltejs/package": "^2.3.11",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "camelcase": "^8.0.0",
+    "publint": "^0.3.12",
+    "rimraf": "^6.0.1",
+    "svelte": "^5.28.2",
+    "svelte-check": "^4.1.7",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
