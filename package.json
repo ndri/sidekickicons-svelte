@@ -1,7 +1,7 @@
 {
   "name": "@sidekickicons/svelte",
   "license": "MIT",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "",
   "keywords": [
     "svelte",
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/ndri/sidekickicons-svelte#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndri/sidekickicons-svelte.git"
+    "url": "git+https://github.com/ndri/sidekickicons-svelte.git"
   },
   "scripts": {
     "dev": "vite dev",
@@ -102,6 +102,9 @@
     "svelte-check": "^4.1.7",
     "typescript": "^5.8.3",
     "vite": "^6.3.4"
+  },
+  "peerDependencies": {
+    "svelte": "^5.19.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
