@@ -1,6 +1,8 @@
 # sidekickicons-svelte
 
-Svelte package that combines [Heroicons](https://github.com/tailwindlabs/heroicons) and [Sidekickicons](https://github.com/ndrik/sidekickicons).
+Svelte package that combines [Heroicons](https://github.com/tailwindlabs/heroicons) and [Sidekickicons](https://github.com/ndri/sidekickicons).
+
+Browse all icons at [sidekickicons.andri.io](https://sidekickicons.andri.io/).
 
 This package requires Svelte 5.19.0 or later.
 
