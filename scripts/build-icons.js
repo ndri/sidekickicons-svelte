@@ -105,7 +105,6 @@ async function main() {
     ensureWriteJson(`./src/lib/20/solid/package.json`, esmPackageJson),
     ensureWriteJson(`./src/lib/24/outline/package.json`, esmPackageJson),
     ensureWriteJson(`./src/lib/24/solid/package.json`, esmPackageJson),
-    // ensureWrite(`./src/lib/index.ts`, ""),
   ]);
 
   return console.log(`Finished building package into the src/lib/ directory.`);
