@@ -2,6 +2,8 @@
 
 Svelte package that combines [Heroicons](https://github.com/tailwindlabs/heroicons) and [Sidekickicons](https://github.com/ndrik/sidekickicons).
 
+This package requires Svelte 5.19.0 or later.
+
 ## Usage
 
 First, install `@sidekickicons/svelte` from npm:
@@ -33,7 +35,7 @@ Import the icons from their respective directory:
 
 Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 
-[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/react/24/outline/)
+[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/svelte/24/outline/)
 
 The imported components are simple Svelte components that accept the `class` prop.
 
