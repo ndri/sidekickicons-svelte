@@ -36,7 +36,7 @@ Import the icons from their respective directory:
 
 Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 
-[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/dist/svelte/24/outline/)
+[Browse the full list of icon names on UNPKG &rarr;](https://app.unpkg.com/@sidekickicons/svelte/files/dist/24/outline)
 
 The imported components are simple Svelte components that accept the `class` prop. The component already includes the `size-6`, `size-5`, or `size-4` class, so the `class` adds any additional classes you want to apply.
 
