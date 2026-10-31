@@ -38,7 +38,7 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 [Browse the full list of icon names on UNPKG &rarr;](https://app.unpkg.com/@sidekickicons/svelte/files/dist/24/outline)
 
-The imported components are simple Svelte components that accept the `class` prop. The component already includes the `size-6`, `size-5`, or `size-4` class, so the `class` adds any additional classes you want to apply.
+The imported components are simple Svelte components that accept the `class` prop. Icons are 24, 20 or 16 pixels by default, set with `width` and `height` attributes, so any size class you pass (like `size-10`) overrides the default.
 
 ## Building
 

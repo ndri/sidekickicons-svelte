@@ -17,21 +17,15 @@ function svgToSvelteComponent(svgString, isDeprecated) {
   const { class: className }: Props = $props();
 </script>\n\n`;
 
+  // The default size is set with width and height attributes rather than a class, so
+  // any size class passed in (like size-10) overrides it
   const component =
     scriptTag +
-    svgString
-      .replace(
-        `viewBox="0 0 24 24"`,
-        `class={['size-6', className]} viewBox="0 0 24 24"`
-      )
-      .replace(
-        `viewBox="0 0 20 20"`,
-        `class={['size-5', className]} viewBox="0 0 20 20"`
-      )
-      .replace(
-        `viewBox="0 0 16 16"`,
-        `class={['size-4', className]} viewBox="0 0 16 16"`
-      );
+    svgString.replace(
+      /viewBox="0 0 (\d+) \d+"/,
+      (viewBox, size) =>
+        `width="${size}" height="${size}" class={className} ${viewBox}`
+    );
 
   return component;
 }
